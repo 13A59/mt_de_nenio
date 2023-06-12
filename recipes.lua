@@ -14,6 +14,16 @@ minetest.register_craft({
    }
 })
 
+--Adding recipe for the water collector
+minetest.register_craft({
+   output = "de_nenio:water_collector_empty",
+   recipe = {
+      {'', "default:cobble", ''},
+      {'', "default:cobble", ''},
+      {"default:cobble", "default:cobble", "default:cobble"}
+   }
+})
+
 --Fill water from bucket to bottles
 minetest.register_craft({
    output = "de_nenio:glass_bottle_water 8",
